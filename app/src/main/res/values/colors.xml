@@ -3,6 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#3F51B5</color>
     <color name="colorAccent">#3F51B5</color>
-    <color name="colorBotao">#FF5252</color>
+
+    <color name="vermelho">#FF5252</color>
+    <color name="cinza">#8492A6</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="fonteAzul">#7683CA</color>
 
 </resources>
