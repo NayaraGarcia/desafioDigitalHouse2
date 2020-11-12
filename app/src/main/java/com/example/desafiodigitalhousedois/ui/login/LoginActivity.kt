@@ -1,4 +1,25 @@
 package com.example.desafiodigitalhousedois.ui.login
 
-class LoginActivity {
+import android.content.Intent
+import android.os.Bundle
+import android.text.method.TransformationMethod
+import androidx.appcompat.app.AppCompatActivity
+import com.example.desafiodigitalhousedois.R
+import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_register.*
+
+class LoginActivity : AppCompatActivity (){
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_login)
+
+        inputPassword.transformationMethod = Senha ()
+
+        btn_login.setOnClickListener { startActivity(Intent(this, ListaRestaurante :: class.java))}
+        btn_register.setOnClickListener { startActivity(Intent(this, ListaRestaurante :: class.java))}
+
+    }
+
+
 }
