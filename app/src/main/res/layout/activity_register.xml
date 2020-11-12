@@ -82,7 +82,7 @@
             app:hintTextColor="@color/fonteAzul">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/inputPasswordConfirmation"
+                android:id="@+id/confirmar_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -93,7 +93,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnRegister"
+        android:id="@+id/btn_register_dois"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="end"

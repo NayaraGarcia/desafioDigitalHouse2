@@ -8,18 +8,29 @@ import com.example.desafiodigitalhousedois.R
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register.*
 
-class LoginActivity : AppCompatActivity (){
+class Login : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        inputPassword.transformationMethod = Senha ()
+        inputPassword.transformationMethod = Senha()
 
-        btn_login.setOnClickListener { startActivity(Intent(this, ListaRestaurante :: class.java))}
-        btn_register.setOnClickListener { startActivity(Intent(this, ListaRestaurante :: class.java))}
+        btn_login.setOnClickListener {
+            startActivity(Intent(this, ListaRestaurante::class.java))
 
+
+            btn_register.setOnClickListener {
+                startActivity(
+                    Intent(
+                        this,
+                        ListaRestaurante::class.java
+                    )
+                )
+            }
+
+
+        }
     }
-
 
 }
