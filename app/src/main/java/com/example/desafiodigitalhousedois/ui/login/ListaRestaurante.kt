@@ -3,9 +3,22 @@ package com.example.desafiodigitalhousedois.ui.login
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.desafiodigitalhousedois.R
+import kotlinx.android.synthetic.main.lista_restaurante.*
 
 class ListaRestaurante : AppCompatActivity() {
 private val restaurante : ArrayList<Restaurante> = getRestaurante ()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.lista_restaurante)
+
+        rvRestaurante.adapter =
+            ListaRestauranteAdapter(
+                this,
+                restaurante
+            )
+
+    }
 
     fun getRestaurante() : ArrayList<Restaurante> {
         return arrayListOf(

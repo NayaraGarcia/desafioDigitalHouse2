@@ -2,7 +2,6 @@ package com.example.desafiodigitalhousedois.ui.login
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.method.TransformationMethod
 import androidx.appcompat.app.AppCompatActivity
 import com.example.desafiodigitalhousedois.R
 import kotlinx.android.synthetic.main.activity_login.*
@@ -17,14 +16,14 @@ class Login : AppCompatActivity() {
         inputPassword.transformationMethod = Senha()
 
         btn_login.setOnClickListener {
-            startActivity(Intent(this, ListaRestaurante::class.java))
+            startActivity(Intent(this, LisaRestaurantAdapter::class.java))
 
 
             btn_register.setOnClickListener {
                 startActivity(
                     Intent(
                         this,
-                        ListaRestaurante::class.java
+                        LisaRestaurantAdapter::class.java
                     )
                 )
             }

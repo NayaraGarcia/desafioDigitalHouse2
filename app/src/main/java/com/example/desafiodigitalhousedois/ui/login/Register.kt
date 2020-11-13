@@ -1,10 +1,7 @@
 package com.example.desafiodigitalhousedois.ui.login
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.desafiodigitalhousedois.R
-import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register.*
 import android.content.Intent as Intent1
 
@@ -18,7 +15,7 @@ class Register : AppCompatActivity() {
 
         btn_register_dois.setOnClickListener {
             startActivity(
-                Intent1(this, ListaRestaurante::class.java)
+                Intent1(this, LisaRestaurantAdapter::class.java)
             )
         }
     }
