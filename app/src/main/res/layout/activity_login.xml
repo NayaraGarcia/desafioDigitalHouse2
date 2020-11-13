@@ -37,13 +37,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/password"
-        app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/edt_password"
+        android:id="@+id/edt_senha"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -55,19 +54,6 @@
         app:layout_constraintHorizontal_bias="0.218"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
-
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="370dp"
-        android:layout_height="51dp"
-        android:background="@color/vermelho"
-        android:text="@string/log_in"
-        android:textColor="@color/branco"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.069" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -108,11 +94,24 @@
         android:id="@+id/btn_register"
         android:layout_width="370dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="370dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/vermelho"
+        android:text="@string/log_in"
+        android:textColor="@color/branco"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent" />
 
 
