@@ -12,7 +12,7 @@ class Register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        edt_password.transformationMethod = Senha()
+        btn_register_dois.transformationMethod = Senha()
         confirmar_password.transformationMethod = Senha()
 
 
