@@ -21,7 +21,9 @@ class Menu: AppCompatActivity() {
         tvTopoMenu.text = restaurant.nome
         ivTopoMenu.setImageResource(restaurant.imagem)
 
-       }
+        rvPratos.adapter = MenuAdapter(this, restaurant.pratos)
+        rvPratos.layoutManager = GridLayoutManager(this, 2)
+    }
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()

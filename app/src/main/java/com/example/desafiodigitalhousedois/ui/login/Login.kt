@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.desafiodigitalhousedois.R
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register.*
+import kotlinx.android.synthetic.main.activity_login.inputPassword as inputPassword1
 
 class Login : AppCompatActivity() {
 
@@ -15,15 +16,15 @@ class Login : AppCompatActivity() {
 
         inputPassword.transformationMethod = Senha()
 
-        btn_login.setOnClickListener {
-            startActivity(Intent(this, LisaRestaurantAdapter::class.java))
+        btnLogin.setOnClickListener {
+            startActivity(Intent(this, ListaRestaurante ::class.java))
 
 
-            btn_register.setOnClickListener {
+            btnRegister.setOnClickListener {
                 startActivity(
                     Intent(
                         this,
-                        LisaRestaurantAdapter::class.java
+                        Register ::class.java
                     )
                 )
             }
